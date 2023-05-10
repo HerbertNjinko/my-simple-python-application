@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4.4.0
         with:
-          images: cmuriukin/github-actions-repo
+          images: herbertabingwa/group3-repo
           
       - name: Build and Push the Docker Image
         uses: docker/build-push-action@v4.0.0
