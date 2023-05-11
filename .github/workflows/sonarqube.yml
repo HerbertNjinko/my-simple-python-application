@@ -2,13 +2,13 @@ name: Build
 on:
   push:
     branches:
-      - main # or the name of your main branch
+      - main
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.5.2
         with:
           fetch-depth: 0
       - uses: SonarSource/sonarqube-scan-action@v1.2.0
